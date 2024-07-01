@@ -1,0 +1,28 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Blue Paint Splotches -->
+  <path d="M20,40 Q25,10 35,35 Q50,50 30,60 Q15,55 20,40" fill="#0061ed" />
+  <path d="M70,90 Q60,70 85,50 Q110,75 95,90 Q80,105 70,90" fill="#0061ed" />
+  <path d="M10,140 Q15,120 35,130 Q55,150 25,160 Q10,150 10,140" fill="#0061ed" />
+
+  <!-- Orange Paint Splotches -->
+  <path d="M120,30 Q130,5 150,10 Q170,20 140,50 Q110,40 120,30" fill="#fcb008" />
+  <path d="M150,150 Q140,130 160,110 Q180,135 160,160 Q140,170 150,150" fill="#fcb008" />
+  <path d="M90,130 Q100,120 110,140 Q120,160 100,170 Q80,150 90,130" fill="#fcb008" />
+
+  <!-- Gray Paint Splotches -->
+  <path d="M80,180 Q70,160 100,150 Q130,180 110,200 Q90,210 80,180" fill="#c8c8c8" />
+  <path d="M170,80 Q160,60 180,40 Q210,70 190,100 Q160,90 170,80" fill="#c8c8c8" />
+  <path d="M130,140 Q140,130 150,150 Q160,170 140,180 Q120,160 130,140" fill="#c8c8c8" />
+
+  <!-- Additional Blue Paint Splotches -->
+  <path d="M40,150 Q30,130 50,110 Q70,135 50,170 Q30,180 40,150" fill="#0061ed" />
+  <path d="M110,60 Q100,40 120,30 Q140,50 120,70 Q100,80 110,60" fill="#0061ed" />
+
+  <!-- Additional Orange Paint Splotches -->
+  <path d="M200,140 Q190,120 210,100 Q230,125 210,160 Q190,170 200,140" fill="#fcb008" />
+  <path d="M80,70 Q85,50 105,60 Q125,80 95,90 Q75,85 80,70" fill="#fcb008" />
+
+  <!-- Additional Gray Paint Splotches -->
+  <path d="M140,190 Q130,170 160,160 Q190,190 170,210 Q150,220 140,190" fill="#c8c8c8" />
+  <path d="M20,90 Q25,70 45,80 Q65,100 35,110 Q15,100 20,90" fill="#c8c8c8" />
+</svg>
