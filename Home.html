@@ -603,6 +603,12 @@
             carouselContainer2.css('transform', 'translateX(' + (-currentIndex2 * 100 / totalImages2) + '%)');
         }, 2000); // Adjust timing (milliseconds) for slide change
     });
+
+    $(document).ready(function () {
+        $('#menu-toggle').click(function () {
+            $('#menu').toggleClass('hidden');
+        });
+    });
 </script>
 
 </body>

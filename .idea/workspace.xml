@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WPSite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4250">
-              <caret line="626" column="7" selection-start-line="626" selection-start-column="7" selection-end-line="626" selection-end-column="7" />
+            <state relative-caret-position="228">
+              <caret line="617" column="8" lean-forward="true" selection-start-line="617" selection-start-column="8" selection-end-line="622" selection-end-column="7" />
               <folding>
                 <element signature="e#1005#1271#0" />
                 <element signature="e#1314#1417#0" />
@@ -49,10 +49,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="321" column="109" selection-start-line="321" selection-start-column="109" selection-end-line="321" selection-end-column="109" />
+            <state relative-caret-position="152">
+              <caret line="189" column="39" selection-start-line="189" selection-start-column="28" selection-end-line="189" selection-end-column="39" />
               <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -61,6 +60,9 @@
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#26795#28190#0" />
+                <element signature="e#27038#27149#0" />
+                <element signature="e#27189#27298#0" />
               </folding>
             </state>
           </provider>
@@ -138,6 +140,7 @@
       <find>Contact</find>
       <find>rem</find>
       <find>carousel</find>
+      <find>menu-toggle</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -227,18 +230,18 @@
       <workItem from="1719250676800" duration="2473000" />
       <workItem from="1719830134546" duration="19685000" />
       <workItem from="1720659992405" duration="2948000" />
-      <workItem from="1720695611267" duration="1251000" />
+      <workItem from="1720695611267" duration="2007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76140000" />
+    <option name="totallyTimeSpent" value="76896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="924" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.21166566" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.21166566" />
       <window_info id="Structure" order="1" sideWeight="0.5005192" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,7 +255,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32830188" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32830188" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -313,37 +316,6 @@
     <entry file="file://$PROJECT_DIR$/Home/Untitled design (8).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WPSite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4250">
-          <caret line="626" column="7" selection-start-line="626" selection-start-column="7" selection-end-line="626" selection-end-column="7" />
-          <folding>
-            <element signature="e#1005#1271#0" />
-            <element signature="e#1314#1417#0" />
-            <element signature="e#1439#1489#0" />
-            <element signature="e#1513#1563#0" />
-            <element signature="e#1583#1633#0" />
-            <element signature="e#1657#1954#0" />
-            <element signature="e#1979#2274#0" />
-            <element signature="e#2308#2603#0" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8326#12082#0" />
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#19919#21504#0" />
-            <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Home/bg.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -377,12 +349,42 @@
     <entry file="file://$PROJECT_DIR$/Home/eugene-zhyvchik-VpR7cbcXtIM-unsplash.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/WPSite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="617" column="8" lean-forward="true" selection-start-line="617" selection-start-column="8" selection-end-line="622" selection-end-column="7" />
+          <folding>
+            <element signature="e#1005#1271#0" />
+            <element signature="e#1314#1417#0" />
+            <element signature="e#1439#1489#0" />
+            <element signature="e#1513#1563#0" />
+            <element signature="e#1583#1633#0" />
+            <element signature="e#1657#1954#0" />
+            <element signature="e#1979#2274#0" />
+            <element signature="e#2308#2603#0" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8326#12082#0" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#19919#21504#0" />
+            <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="321" column="109" selection-start-line="321" selection-start-column="109" selection-end-line="321" selection-end-column="109" />
+        <state relative-caret-position="152">
+          <caret line="189" column="39" selection-start-line="189" selection-start-column="28" selection-end-line="189" selection-end-column="39" />
           <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -391,6 +393,9 @@
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#26795#28190#0" />
+            <element signature="e#27038#27149#0" />
+            <element signature="e#27189#27298#0" />
           </folding>
         </state>
       </provider>
