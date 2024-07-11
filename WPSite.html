@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,17 +8,18 @@
     <!-- Include jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Include Tailwind CSS -->
+    <!-- Include Tailwind CSS (for styling, optional) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-
+    <!-- Custom styles -->
     <style>
         html, body {
             background: white;
@@ -79,11 +81,79 @@
             font-size: 20px; /* Font size */
             line-height: 1.5; /* Adjust line height if needed */
         }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            width: 66.66%; /* 2/3 of container width */
+            height: 50rem; /* Adjust height as needed */
+            border-radius: 0.75rem; /* Rounded corners */
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+            width: 300%; /* Adjusted to accommodate all images */
+        }
+
+        .carousel img {
+            width: calc(100% / 3); /* Each image takes up 1/3 of the container width */
+            height: 100%; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure images cover the carousel area */
+            border-radius: 0.75rem; /* Apply rounded corners to images */
+        }
+
+        .carousel2 {
+            position: relative;
+            overflow: hidden;
+            width: 66.66%; /* 2/3 of container width */
+            height: 50rem; /* Adjust height as needed */
+            border-radius: 0.75rem; /* Rounded corners */
+        }
+
+        .carousel2-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+            width: 300%; /* Adjusted to accommodate all images */
+        }
+
+        .carousel2 img {
+            width: calc(100% / 3); /* Each image takes up 1/3 of the container width */
+            height: 100%; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure images cover the carousel area */
+            border-radius: 0.75rem; /* Apply rounded corners to images */
+        }
+
+        .service-card {
+            transition: transform 0.3s ease-out;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-title {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .service-card:hover .service-title {
+            opacity: 1;
+        }
+
+        .img-model {
+            width: 992px;
+            height: 650px;
+        }
+
+
     </style>
 </head>
 
 <body>
-<!-- Navbar -->
+
 <nav class="bg-white shadow-lg">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-24">
@@ -130,7 +200,7 @@
 
     <!-- Responsive Menu -->
     <div id="menu"
-         class="hidden sm:hidden bg-white shadow-lg absolute top-16 left-0 right-0 px-2 py-3 space-y-1 sm:flex sm:p-0">
+         class="hidden sm:hidden bg-white shadow-lg absolute top-20 left-0 right-0 px-2 py-4 space-y-1 sm:flex sm:p-0 z-10">
         <!-- Menu Items -->
         <a href="#" class="block px-3 py-2 text-gray-800 hover:bg-gray-200 rounded-md">Qui sommes nous ?</a>
         <a href="#" class="block px-3 py-2 text-gray-800 hover:bg-gray-200 rounded-md">Services</a>
@@ -143,319 +213,217 @@
     </div>
 </nav>
 
-<!-- Home/0b340f_1a2676c30ecc4ccab2ee62ce71ba96af~mv2.jpg -->
-<!-- First section --><!-- style="background-image: url('Home/"> -->
-<div class="relative bg-cover bg-center bg-blue-600" style="background-image: url('Home/002.png');">
+<!-- First section -->
+<div class="relative bg-cover bg-center bg-blue-600	" style="background-image: url('Home/002.png');">
     <!--<div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-yellow-400 to-gray-400 opacity-75"></div>-->
-    <div class="relative container mx-auto px-6 py-64 text-white flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3 mb-10 md:mb-0 md:mr-8">
-            <h2 class="custom-title relative inline-block text-5xl">Explore the World with Us</h2>
-
-
-            <p class="font-bold custom-text text-white mt-4">Explorez des voyages personnalisés, des expériences
-                singulières
-                et des lieux mémorables. Votre voyage débute à cet endroit.</p>
-        </div>
+    <div class="relative container mx-auto px-6 py-12 md:py-64 text-white flex flex-col md:flex-row items-center">
+    <div class="md:w-1/3 mb-10 md:mb-0 md:mr-8">
+        <h2 class="custom-title relative inline-block text-5xl">Explore the World with Us</h2>
+        <p class="font-bold custom-text text-white mt-4">Faites des voyages personnalisés, des expériences singulières et des lieux mémorables. Votre voyage débute à cet endroit.</p>
     </div>
 </div>
-
+</div>
 
 <!-- Second section Qui somme nous ? -->
 <div class="relative bg-cover bg-center h-2/3"
      style="background-image: url('Home/a0554f_08b5df2a608c4c2c87a4c2ec2b6c154e~mv2.png');">
     <div class="flex items-center justify-center ">
-        <div class="text-center text-white px-6 py-32">
+        <div class="text-center text-white px-6 pt-16 pb-32">
             <div class="w-auto flex flex-col items-center mb-8">
                 <h2 class="text-6xl md:text-7xl font-bold md:w-2/3 mx-auto  custom-title-secondary">Qui Somme Nous
                     ?</h2>
                 <div class="mt-2 h-1 w-1/5 opacity-75" style="background: #0061ed"></div>
             </div>
-            <p class="text-xl md:text-2xl mb-8 md:w-1/3 mx-auto custom-text">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
+            <p class="text-xl md:text-2xl mb-8 md:w-1/3 mx-auto custom-text">Zaatcha est une agence de voyage dédiée à transformer vos rêves d'exploration en réalité.
+                Notre mission est de vous offrir des expériences de voyage inoubliables, adaptées à vos envies et besoins spécifiques.</p>
+            <p class="text-xl md:text-2xl mb-8 md:w-1/3 mx-auto custom-text">Fondée par une équipe de passionnés de voyage, Explore Monde met à profit ses nombreuses années d'expérience pour vous
+                proposer des séjours uniques et personnalisés.</p>
         </div>
     </div>
 </div>
 
 <!-- Third section Services -->
-<!-- <div class="mt-10">
-    <div class="container mx-auto px-6 pt-20">
-        <div class="md:flex flex-col">
+<div class="my-8">
+    <div class="container mx-auto px-6 pt-4">
+        <div class="md:flex flex-col"> <!-- Adjusted left padding for the text -->
             <div class="md:w-2/5 mb-16 md:pr-12 md:pl-24 ">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 custom-title">Services</h2>
-                <p class="custom-text text-lg text-gray-700 custom-text">Your descriptive text here. Lorem ipsum dolor
-                    sit
-                    amet, consectetur adipiscing elit. Nulla convallis libero vel lacus tincidunt mattis.</p>
+                <p class="custom-text text-lg text-gray-700 custom-text">
+                    Chez Zaatcha, nous offrons une gamme complète de services pour répondre à tous vos besoins de voyage. Que vous soyez une entreprise à la recherche de solutions de
+                    voyage efficaces ou un particulier désirant explorer de nouvelles destinations, nous avons ce qu'il vous faut.
 
+                </p>
             </div>
             <div class="py-8">
                 <div class="container mx-auto px-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 2"
+                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
+                            <img src="Home/foundoq2.png" alt="Service 1"
                                  class="relative w-full h-full object-cover rounded-lg">
                             <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center bottom-8 left-4 right-4">
+                            <div class="absolute flex justify-center items-center inset-0">
                                 <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title">Service 1</h3>
-
+                                    <h3 class="font-semibold mb-4 service-title text-white">B2B</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
+                            <img src="Home/Untitled%20design%20(8)%20(2).png" alt="Service 2"
+                                 class="relative w-full h-full object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
+                            <div class="absolute flex justify-center items-center inset-0">
+                                <div class="text-center">
+                                    <h3 class="font-semibold mb-4 service-title text-white">Hadj & Omra</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
+                            <img src="Home/foundoqres2.png" alt="Service 3"
+                                 class="relative w-full h-full object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
+                            <div class="absolute flex justify-center items-center inset-0">
+                                <div class="text-center">
+                                    <h3 class="font-semibold mb-4 service-title text-white">B2C</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
+                            <img src="Home/Untitled%20design%20(5).png" alt="Service 4"
+                                 class="relative w-full h-full object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
+                            <div class="absolute flex justify-center items-center inset-0">
+                                <div class="text-center">
+                                    <h3 class="font-semibold mb-4 service-title text-white">Packages</h3>
                                 </div>
                             </div>
                         </div>
 
-
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 2"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center bottom-8 left-4 right-4">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title">Service 2</h3>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 2"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center bottom-8 left-4 right-4">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title">Service 3</h3>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 2"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center bottom-8 left-4 right-4">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title">Service 4</h3>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
+<!-- Fourth section B2B -->
+<div class="bg-gray-100 lg:pt-16 pt-1 pb-6">
+    <div class="container mx-auto px-6">
+        <div class="relative mb-12">
+            <div class="md:flex items-center">
+                <div class="absolute md:relative top-0 left-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-8 md:p-24 rounded-lg">
+                    <h3 class="text-3xl font-semibold mb-4 custom-title">B2B</h3>
+                    <p class="custom-text text-lg mb-6">Zaatcha offre des services de voyage pour entreprises, incluant la réservation de vols,
+                        d'hôtels et la gestion des déplacements professionnels, garantissant des voyages efficaces et bien organisés.</p>
+                </div>
+                <img src="Home/foundoq.png" alt="Service 1" class="img-model w-full md:w-2/3 h-80 md:h-[450px] bg-red-300 md:bg-green-300 object-cover rounded-lg
+                shadow-lg mb-6 md:mb-0 md:ml-auto mt-24">
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Fourth section B2B -->
+<!--<div class="bg-gray-100 pt-16 pb-6">
+    <div class="container mx-auto px-6">
+        <div class="relative mb-12">
+            <div class="md:flex items-center">
+                <div class="absolute top-0 left-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg">
+                    <h3 class="text-3xl font-semibold mb-4 custom-title">B2B</h3>
+                    <p class="custom-text text-lg mb-6">Zaatcha offre des services de voyage pour entreprises, incluant la réservation de vols, d'hôtels et la gestion des déplacements
+                        professionnels, garantissant des voyages efficaces et bien organisés.</p>
+                </div>
+                <img src="Home/foundoq.png" alt="Service 1"
+                     class="w-full md:w-2/3 h-[50rem] object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:ml-auto mt-24">
+            </div>
         </div>
     </div>
 </div>-->
 
-<style>
-    .service-card {
-        transition: transform 0.3s ease-out;
-    }
-
-    .service-card:hover {
-        transform: scale(1.05);
-    }
-
-    .service-title {
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-    }
-
-    .service-card:hover .service-title {
-        opacity: 1;
-    }
-</style>
-
-<div class="my-8">
-    <div class="container mx-auto px-6 pt-20">
-        <div class="md:flex flex-col"> <!-- Adjusted left padding for the text -->
-            <div class="md:w-2/5 mb-16 md:pr-12 md:pl-24 ">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 custom-title">Services</h2>
-                <p class="custom-text text-lg text-gray-700 custom-text">Your descriptive text here. Lorem ipsum dolor
-                    sit
-                    amet, consectetur adipiscing elit. Nulla convallis libero vel lacus tincidunt mattis.</p>
-            </div>
-            <div class="py-8">
-                <div class="container mx-auto px-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 1"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center items-center inset-0">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title text-white">Service 1</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 2"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center items-center inset-0">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title text-white">Service 2</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 3"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center items-center inset-0">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title text-white">Service 3</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white h-96 rounded-lg shadow-lg text-center relative service-card">
-                            <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 4"
-                                 class="relative w-full h-full object-cover rounded-lg">
-                            <div class="absolute inset-0 bg-black rounded-lg opacity-30"></div>
-                            <div class="absolute flex justify-center items-center inset-0">
-                                <div class="text-center">
-                                    <h3 class="font-semibold mb-4 service-title text-white">Service 4</h3>
-                                </div>
-                            </div>
-                        </div>
-
+<!-- Fifth section Hadj & Omra -->
+<div class="bg-white pt-16 pb-6">
+    <div class="container mx-auto px-6">
+        <div class="relative mb-12">
+            <div class="md:flex items-center">
+                <div class="carousel">
+                    <div class="carousel-container mt-24">
+                        <img src="Home/Untitled%20design%20(8).png" class="object-cover img-model">
+                        <img src="Home/Untitled%20design%20(6).png" class="object-cover img-model">
+                        <img src="Home/Untitled%20design%20(9).png" class="object-cover img-model">
+                        <!-- Add more images here as needed -->
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Fourth section B2B -->
-<div class="bg-gray-100 p-16 mt-32">
-    <div class="container mx-auto px-6">
-        <div class="relative mb-12">
-            <div class="md:flex items-center">
-                <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 1"
-                     class="w-full md:w-2/3 h-[50rem] mt-24 object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6">
-                <div class="absolute top-0 right-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg">
-                    <h3 class="text-3xl font-semibold mb-4 custom-title">B2B</h3>
-                    <p class="custom-text text-lg mb-6">Description of service 1. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla convallis libero vel lacus tincidunt mattis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Fifth section B2C -->
-<div class="bg-white py-16">
-    <div class="container mx-auto px-6">
-        <div class="relative mb-12">
-            <div class="md:flex items-center">
-                <div class="absolute top-0 left-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg shadow-lg">
-                    <h3 class="text-3xl font-semibold mb-4 custom-title">B2C</h3>
-                    <p class="custom-text text-lg mb-6">Description of service 1. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla convallis libero vel lacus tincidunt mattis.</p>
-                </div>
-                <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 1"
-                     class="w-full md:w-2/3 h-[50rem] object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:ml-auto mt-24">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sixth section Hadj & Omra -->
-<div class="bg-gray-100 py-16">
-    <div class="container mx-auto px-6">
-        <div class="relative mb-12">
-            <div class="md:flex items-center">
-                <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 1"
-                     class="w-full md:w-2/3 h-[50rem] mt-24 object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6">
-                <div class="absolute top-0 right-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg">
+                <div class="absolute top-0 right-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg shadow-lg">
                     <h3 class="text-3xl font-semibold mb-4 custom-title">Hadj & Omra</h3>
-                    <p class="custom-text text-lg mb-6">Description of service 1. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla convallis libero vel lacus tincidunt mattis.</p>
+                    <p class="custom-text text-lg mb-6">Zaatcha vous accompagne dans vos pèlerinages avec des services dédiés pour le Hadj et la Omra. Nous nous
+                        occupons de tout : réservations de vols, hébergement et assistance sur place.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Seventh section Packages -->
-<div class="bg-white py-16">
+<!-- Sixth section B2C -->
+<div class="bg-gray-100 pt-16 pb-6">
     <div class="container mx-auto px-6">
         <div class="relative mb-12">
             <div class="md:flex items-center">
-                <div class="absolute top-0 left-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg shadow-lg">
-                    <h3 class="text-3xl font-semibold mb-4 custom-title">Packages</h3>
-                    <p class="custom-text text-lg mb-6">Description of service 1. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla convallis libero vel lacus tincidunt mattis.</p>
+                <div class="absolute top-0 left-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg">
+                    <h3 class="text-3xl font-semibold mb-4 custom-title">B2C</h3>
+                    <p class="custom-text text-lg mb-6">Chez Zaatcha vous pouvez consulter et réserver des vols nationaux et internationaux
+                        à des prix compétitifs. Profitez de nos offres personnalisées pour des séjours mémorables.</p>
                 </div>
-                <img src="Home/photo-1476514525535-07fb3b4ae5f1.png" alt="Service 1"
-                     class="w-full md:w-2/3 h-[50rem] object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:ml-auto mt-24">
+                <img src="Home/foundoqres.png" alt="Service 1"
+                     class="img-model w-full md:w-2/3 h-[50rem] object-cover rounded-lg shadow-lg mb-6 md:mb-0 md:ml-auto mt-24">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Seventh section Package -->
+<div class="bg-white pt-16 pb-6">
+    <div class="container mx-auto px-6">
+        <div class="relative mb-12">
+            <div class="md:flex items-center">
+                <div class="carousel2">
+                    <div class="carousel2-container mt-24">
+                        <img src="Home/Untitled%20design%20(5).png" class="object-cover img-model">
+                        <img src="Home/Untitled%20design%20(3).png" class="object-cover img-model">
+                        <img src="Home/Untitled%20design.png" class="object-cover img-model">
+                        <!-- Add more images here as needed -->
+                    </div>
+                </div>
+                <div class="absolute top-0 right-0 w-full md:w-2/5 h-auto bg-white flex flex-col justify-center p-24 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold mb-4 custom-title">Package</h3>
+                    <p class="custom-text text-lg mb-6">Zaatcha crée des voyages sur mesure pour particuliers et familles. Nous gérons la réservation de vos billets,
+                        hôtels et activités, pour vous offrir des expériences de voyage uniques et sans souci, parfaitement adaptées à vos envies et besoins.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Eight section Testimony -->
-<!--<div class="container mx-auto px-6 py-12">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-    <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
-      <img src="https://via.placeholder.com/300" alt="Image 1" class="w-full h-64 object-cover rounded-t-lg">
-      <div class="bg-white p-4">
-        <h3 class="text-xl font-semibold mb-2">Item 1</h3>
-        <p class="text-sm">Description for item 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-
-
-    <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
-      <img src="https://via.placeholder.com/300" alt="Image 2" class="w-full h-64 object-cover rounded-t-lg">
-      <div class="bg-white p-4">
-        <h3 class="text-xl font-semibold mb-2">Item 2</h3>
-        <p class="text-sm">Description for item 2. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
-      </div>
-    </div>
-
-
-    <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
-      <img src="https://via.placeholder.com/300" alt="Image 3" class="w-full h-64 object-cover rounded-t-lg">
-      <div class="bg-white p-4">
-        <h3 class="text-xl font-semibold mb-2">Item 3</h3>
-        <p class="text-sm">Description for item 3. Sed euismod sapien ac arcu ultrices, at lacinia odio fermentum.</p>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
 <div class="relative px-32 mx-auto py-24 bg-cover bg-center" style="background-image: url('Home/bg.webp');">
     <div class="absolute inset-0 bg-white bg-opacity-75"></div>
-    <div class="container relative">
+    <div class="container relative flex flex-col justify-center items-center">
         <h2 class="text-3xl font-bold mb-8 text-center custom-title">Témoignage</h2>
 
 
-        <div class="relative">
+        <div class="relative w-1/3 shadow-lg">
             <div id="carousel" class="carousel-slide">
                 <div class="carousel-inner flex justify-center h-80">
-                    <div class="carousel-item w-1/2 h-full bg-white flex-shrink-0">
+                    <div class="carousel-item w-full h-full bg-white flex-shrink-0 rounded-lg">
                         <div class="w-full h-full rounded-lg flex justify-center items-center">
                             <div class="w-1/2 text-center">Slide 1 Content.</div>
                         </div>
                     </div>
-                    <div class="carousel-item w-1/2 bg-white rounded-lg flex-shrink-0 hidden">
+                    <div class="carousel-item w-full bg-white rounded-lg flex-shrink-0 hidden rounded-lg">
 
                         <div class="w-full h-full flex justify-center items-center">
                             <div class="w-1/2 text-center">Slide 2 Content.</div>
                         </div>
                     </div>
-                    <div class="carousel-item w-1/2 rounded-lg flex-shrink-0 hidden">
+                    <div class="carousel-item w-full rounded-lg flex-shrink-0 hidden rounded-lg">
 
                         <div class="w-full h-full flex bg-white justify-center items-center">
                             <div class="w-1/2 text-center">Slide 3 Content.</div>
@@ -474,62 +442,6 @@
 
     </div>
 </div>
-
-
-<script>
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    const dots = document.querySelectorAll('[id^=dot]');
-    let currentIndex = 0;
-    const totalItems = carouselItems.length;
-
-    // Initial setup
-    carouselItems.forEach((item, index) = > {
-        if(index !== currentIndex;
-    )
-    {
-        item.classList.add('hidden');
-    }
-    })
-    dots.forEach((dot, index) = > {
-        dot.addEventListener('click', () = > {
-            changeSlide(index);
-    })
-    })
-    function changeSlide(index) {
-        carouselItems.forEach((item, i) = > {
-            if(i === index;
-    )
-        {
-            item.classList.remove('hidden');
-            dots[i].classList.add('bg-white');
-        }
-    else
-        {
-            item.classList.add('hidden');
-            dots[i].classList.remove('bg-white');
-        }
-    })
-        currentIndex = index;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        changeSlide(currentIndex);
-    }
-
-    // Automatic slide change
-    const interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
-
-    // Stop automatic sliding on dot click or button click
-    function stopInterval() {
-        clearInterval(interval);
-    }
-
-    dots.forEach(dot = > {
-        dot.addEventListener('click', stopInterval);
-    })
-
-</script>
 
 
 <!-- Footer -->
@@ -556,7 +468,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <p class="mt-4 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -586,11 +497,10 @@
                         <a href="#"
                            class="bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg inline-block hover:bg-blue-700 transition duration-300">Envoyer</a>
                     </div>
-
                 </form>
             </div>
             <!-- Right section with phone numbers, addresses, and social links -->
-            <div class="md:w-1/3 md:order-3  ml-10">
+            <div class="md:w-1/3 md:order-3 pl-20" id="ctn">
                 <div class="mt-4 md:mt-0">
                     <div class="mb-2">
                         <h3 class="text-lg font-semibold text-gray-700 mb-10">Contact Information</h3>
@@ -598,9 +508,10 @@
                     </div>
                     <div class="flex mt-4">
                         <!-- Social icons (replace with actual links/icons) -->
-                        <a href="#" class="text-gray-400 hover:text-gray-200 mx-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-gray-200 mx-2"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-gray-200 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-[#0061ed] hover:text-gray-400 mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-[#0061ed] hover:text-gray-400 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-[#0061ed] hover:text-gray-400 mx-2"><i class="fab fa-linkedin-in"></i></a>
+
                     </div>
                 </div>
             </div>
@@ -614,14 +525,88 @@
     </div>
 </footer>
 
-<!-- jQuery script for toggling responsive menu -->
+<!-- JavaScript for carousel functionality -->
 <script>
+    $(document).ready(function () {
+        const $carouselItems = $('.carousel-item');
+        const $dots = $('[id^=dot]');
+        let currentIndex = 0;
+        const totalItems = $carouselItems.length;
+
+        // Initial setup
+        $carouselItems.each(function (index) {
+            if (index !== currentIndex) {
+                $(this).addClass('hidden');
+            }
+        });
+
+        $dots.each(function (index) {
+            $(this).on('click', function () {
+                changeSlide(index);
+            });
+        });
+
+        function changeSlide(index) {
+            $carouselItems.each(function (i) {
+                if (i === index) {
+                    $(this).removeClass('hidden');
+                    $dots.eq(i).addClass('bg-white');
+                } else {
+                    $(this).addClass('hidden');
+                    $dots.eq(i).removeClass('bg-white');
+                }
+            });
+            currentIndex = index;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            changeSlide(currentIndex);
+        }
+
+        // Automatic slide change
+        const interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+        // Stop automatic sliding on dot click or button click
+        function stopInterval() {
+            clearInterval(interval);
+        }
+
+        $dots.on('click', stopInterval);
+    });
+
+
+    $(document).ready(function () {
+        var carouselContainer = $('.carousel-container');
+        var images = carouselContainer.find('img');
+        var currentIndex = 0;
+        var totalImages = images.length;
+
+        setInterval(function () {
+            currentIndex = (currentIndex + 1) % totalImages;
+            carouselContainer.css('transform', 'translateX(' + (-currentIndex * 100 / totalImages) + '%)');
+        }, 2000); // Adjust timing (milliseconds) for slide change
+    });
+
+    $(document).ready(function () {
+        var carouselContainer2 = $('.carousel2-container');
+        var images = carouselContainer2.find('img');
+        var currentIndex2 = 0;
+        var totalImages2 = images.length;
+
+        setInterval(function () {
+            currentIndex2 = (currentIndex2 + 1) % totalImages2;
+            carouselContainer2.css('transform', 'translateX(' + (-currentIndex2 * 100 / totalImages2) + '%)');
+        }, 2000); // Adjust timing (milliseconds) for slide change
+    });
+
     $(document).ready(function () {
         $('#menu-toggle').click(function () {
             $('#menu').toggleClass('hidden');
         });
     });
 </script>
+
 </body>
 
 </html>
